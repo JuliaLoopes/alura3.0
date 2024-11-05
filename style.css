@@ -1,0 +1,128 @@
+:root{
+    --text-color: #ac7421;
+    --card-front-color:#f7f7f7;
+    --card-back-color:#000000;
+}
+
+body{
+    background-color: bisque;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#container {
+    display: flexbox;
+}
+
+.cartao{
+    margin: 1rem 1rem;
+    background-color: rgb(243, 243, 243);
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% -6rem);
+}
+
+.cartao_conteudo {
+    background-color: var(--card-front-color);
+    text-align: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+
+body{
+    background-color: bisque;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#container {
+    display: flexbox;
+}
+
+.cartao{
+    margin: 1rem 1rem;
+    background-color: rgb(243, 243, 243);
+    height: 20rem;
+    flex-grow: 1;
+    flex-basis: calc(33% -6rem);
+}
+
+.cartao_conteudo {
+    text-align: center;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.cartao_conteudo_pergunta p {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.cartao_conteudo_resposta p {
+  color:var(--card-back-color);
+   font-weight: 300;
+}
+
+
+.cartao_conteudo h3{
+    color: var(--text-color);
+    border: 1px solid black;
+    text-align: left;
+    padding: 0.5rem;
+    backface-visibility: hidden;
+}
+
+.cartao:hover .cartao_conteudo{
+    transform: rotateY(180deg);
+}
+
+.cartao_conteudo_pergunta, 
+.cartao_conteudo_resposta{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+
+.cartao_conteudo_resposta{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+footer {
+    background-color: black;
+    color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+}
+
+footer p{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+.cartao_conteudo h3{
+    background-color: rgb(249, 255, 162);
+    text-align: left;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+}
+
+footer p{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
